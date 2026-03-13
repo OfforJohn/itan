@@ -65,7 +65,13 @@ export default function Home() {
               priority
               sizes="140px"
             />
-            <div className="flex justify-center min-h-[32px] lg:min-h-[46px] xl:min-h-[52px] px-4 md:px-6 xl:px-8">
+            <div className="flex justify-center items-center gap-4 min-h-[32px] lg:min-h-[46px] xl:min-h-[52px] px-4 md:px-6 xl:px-8">
+              <Link
+                href="/blog"
+                className="flex items-center bg-[#D4A853] text-white p-2 md:px-6 md:py-2 rounded-md hover:bg-[#C49A48] transition shadow text-base lg:text-lg font-medium"
+              >
+                Blog
+              </Link>
               <Link
                 href="/reader/sign_up"
                 className="flex items-center bg-red-600 text-white p-2 md:px-6 md:py-2 rounded-md hover:bg-red-700 transition shadow text-base lg:text-lg"
@@ -449,13 +455,21 @@ export default function Home() {
             With ITAN Global Publishing, authors can self-publish their works,
             manage their books, and royalties all in one platform.
           </p>
-          <Link
-            href="https://publish.itan.app/author/sign_up"
-            target="_blank"
-            className="bg-red-700 px-6 py-2 rounded font-medium"
-          >
-            Learn More
-          </Link>
+          <div className="flex justify-center items-center gap-4">
+            <Link
+              href="/blog"
+              className="bg-[#D4A853] hover:bg-[#C49A48] px-6 py-2 rounded font-medium transition-colors"
+            >
+              Read Our Blog
+            </Link>
+            <Link
+              href="https://publish.itan.app/author/sign_up"
+              target="_blank"
+              className="bg-red-700 hover:bg-red-800 px-6 py-2 rounded font-medium transition-colors"
+            >
+              Learn More
+            </Link>
+          </div>
         </div>
       </section>
     </div>
